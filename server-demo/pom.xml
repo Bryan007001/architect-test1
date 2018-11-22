@@ -16,6 +16,7 @@
 	</parent>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<start-class>com.cxspaces.demo.App</start-class>
 	</properties>
 
 	<dependencies>
@@ -47,4 +48,13 @@
 			<artifactId>spring-session-data-redis</artifactId>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehous.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.5.0</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
