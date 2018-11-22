@@ -28,7 +28,7 @@ public class SampleController {
 @Component
 class GreetingService {
 	public String getName() {
-		return System.getProperty("instance-name", "UNKNOWN");
+		return System.getProperty("instance_name", "UNKNOWN");
 	}
 	
 	public String getSessionId(HttpServletRequest request){
