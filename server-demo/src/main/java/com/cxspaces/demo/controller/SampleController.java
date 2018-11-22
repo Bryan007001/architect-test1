@@ -33,10 +33,10 @@ class GreetingService {
 	
 	public String getSessionId(HttpServletRequest request){
 		
-		Object o = request.getSession().getAttribute("creator");
-		if(o == null){
-			o = getName() + ":" + request.getLocalPort();
-			request.getSession().setAttribute("creator", o);
+		Object creator = request.getSession().getAttribute("creator");
+		if(creator == null){
+			creator = getName() + ":" + request.getLocalPort();
+			request.getSession().setAttribute("creator", creator);
 		}
 		
 		Integer count = 0;
@@ -47,7 +47,7 @@ class GreetingService {
 		count ++;
 		request.getSession().setAttribute("count", count);
 		
-		return "creator=" + o +  " sessionId=" + request.getSession().getId() +"<br/>" + "count=" + count;
+		return "creator=" + creator +  " sessionId=" + request.getSession().getId() +"<br/>" + "count=" + count;
 	}
 
 	public String sayHello() {
