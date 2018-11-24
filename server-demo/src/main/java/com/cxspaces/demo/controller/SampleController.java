@@ -47,7 +47,7 @@ class GreetingService {
 		count ++;
 		request.getSession().setAttribute("count", count);
 		
-		return "creator=" + creator +  " sessionId=" + request.getSession().getId() +"<br/>" + "count=" + count;
+		return "instance_name:" + getName() + "<br>creator=" + creator +  " sessionId=" + request.getSession().getId() +"<br/>" + "count=" + count;
 	}
 
 	public String sayHello() {
