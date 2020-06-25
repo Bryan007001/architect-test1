@@ -1,4 +1,4 @@
-package com.test.metrics;
+package com.cxspaces.test.metrics;
 
 public class ConsoleHelloWorld {
 

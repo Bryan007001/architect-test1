@@ -1,4 +1,4 @@
-package com.test.metrics.web1;
+package com.cxspaces.test.metrics.web1;
 
 import java.util.concurrent.atomic.AtomicLong;
 
